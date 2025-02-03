@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kassenbuch App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kassenbuch</h1>
+
+  <form id="transaction-form">
+    <label for="description">Beschreibung:</label>
+    <input type="text" id="description" required>
+    
+    <label for="amount">Betrag:</label>
+    <input type="number" id="amount" required step="0.01">
+    
+    <button type="submit">Hinzufügen</button>
+  </form>
+
+  <h2>Transaktionen</h2>
+  <ul id="transaction-list"></ul>
+
+  <h2>Aktueller Kontostand: <span id="balance">0.00</span> €</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
